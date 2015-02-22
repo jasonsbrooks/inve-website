@@ -1,4 +1,5 @@
 jQuery(document).ready(function($){
+	$("#head").height($(window).height());
 	var $timeline_block = $('.cd-timeline-block');
 
 	//hide timeline blocks which are outside the viewport
@@ -15,5 +16,16 @@ jQuery(document).ready(function($){
 				$(this).find('.cd-timeline-img, .cd-timeline-content').removeClass('is-hidden').addClass('bounce-in');
 			}
 		});
+	});
+
+	$(window).on("resize",function() {
+		var bodyheight = $(window).height();
+		$("#head").height(bodyheight);
+	});
+
+  	$("#arrow-down").click(function() {
+	    $('html, body').animate({
+	        scrollTop: $("#about").offset().top
+	    }, 1000);
 	});
 });

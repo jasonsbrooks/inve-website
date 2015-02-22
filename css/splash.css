@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+a {
+	color: inherit;
+}
+
 /*********************
 
 Font Imports
@@ -17,6 +21,7 @@ Font Imports
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,800,700);
 @import url(http://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope);
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif:400italic,400,700italic,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
 
 @font-face {
     font-family: 'scicons';
@@ -46,16 +51,20 @@ Header
 *********************/
 
 section#head {
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background_2.jpg') no-repeat center center fixed;
+	/*position: fixed;*/
+	top: 0;
+	left: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background_2.jpg') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     padding-top: 40px;
     height: 750px;
+    /*height: 100%;*/
 }
 
 #head .photo-container{
-  width: 60%;
-  max-width:700px;
+  width: 80%;
+  max-width:800px;
   height: auto;
   margin: 20px auto;
   padding: 20px;
@@ -66,6 +75,88 @@ section#head {
   display: block;
   width: 100%;
   margin: 0 auto;
+}
+
+@-webkit-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-moz-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@-ms-keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+@keyframes bounce {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+.arrow {
+  position: relative;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  margin: 0 auto;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
+}
+
+#arrow-down:hover {
+	cursor: pointer;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  -moz-animation: bounce 2s infinite;
+  -ms-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
 
 /*********************
@@ -148,12 +239,21 @@ div.social a.icon-mail:hover {
 }
 
 section#footer h3 {
-    font-family: 'Annie Use Your Telescope', cursive;
-    padding-top: 20px;
-    font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	padding-top: 20px;
+    font-size: 14px;
     padding-bottom: 20px;
     text-align: center;
 }
+
+/*********************
+
+Navigation
+
+*********************/
+
+
 
 /*********************
 
@@ -162,7 +262,7 @@ About Section
 *********************/
 
 section#about {
-    background-color: #EBF5FF;
+    background-color: #e7e7e2;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 45px;
 }
@@ -183,6 +283,7 @@ section#about {
 #about-content {
     font-weight: 200;
     font-size: 20px;
+    /*font-size: 2vw;*/
     line-height: 150%;
     width: 75%;
     margin: 0 auto;
@@ -190,6 +291,129 @@ section#about {
 
 #about-content h2 {
     padding-bottom: 20px;
+}
+
+
+/*********************
+
+Sailbot Section
+
+*********************/
+
+section#sailbot {
+    background-color: #e0e6eb;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 45px;
+}
+
+#sailbot-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#sailbot-title h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#sailbot-content {
+    font-weight: 200;
+    font-size: 20px;
+    /*font-size: 2vw;*/
+    line-height: 150%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#sailbot-content h2 {
+    padding-bottom: 20px;
+}
+
+
+/*********************
+
+Team Section
+
+*********************/
+
+section#team {
+	background-color: white;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#team-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#team-title h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#team-members {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#team-members article {
+  display: inline-block;
+  padding: 1.5rem;
+}
+#team-members article img {
+  max-width: 100%;
+  text-align: center;
+}
+#team-members article p {
+  max-width: 30rem;
+  font-weight: 300;
+}
+
+#team-members img {
+  margin: 0 auto 1rem;
+  display: block;
+  border-radius: 100%;
+  border: 3px solid #fab315;
+  padding: .625rem;
+  -webkit-filter: grayscale(1);
+}
+#team-members img:hover {
+  -webkit-filter: grayscale(0);
+}
+
+.person-name {
+	font-size: 17px;
+	padding-bottom: 6px;
+}
+
+.person-title {
+	font-style: italic;
+}
+
+.clearer {
+	clear: both;
+}
+
+#team-leadership img {
+  width: 300px;
+  height: 300px;
+}
+
+#team-leads img {
+  width: 250px;
+  height: 250px;
+}
+
+#team-rest img, #team-advisors img {
+	width: 200px;
+	height: 200px;
 }
 
 /*********************
@@ -216,6 +440,7 @@ section#timeline {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.7);
 }
+
 
 
 /*********************
