@@ -54,7 +54,7 @@ section#head {
 	/*position: fixed;*/
 	top: 0;
 	left: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background_2.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/background_2.png') no-repeat center center fixed;
     background-size: cover;
     width: 100%;
     padding-top: 40px;
