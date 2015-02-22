@@ -174,7 +174,6 @@ section#footer {
 div.social {
     width: 300px;
     margin: 0 auto;
-    padding-top: 33px;
 }
 
 div.social a {
@@ -440,7 +439,6 @@ section#timeline {
     text-transform: uppercase;
     color: rgba(0, 0, 0, 0.7);
 }
-
 
 
 /*********************
