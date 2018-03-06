@@ -3,240 +3,331 @@
   <head>
     <title>Yale InVē</title>
     <meta charset="UTF-8">
+    <link rel="icon" href="./img/yale_icon1.png">
+    <!-- import css -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/reset.css" rel="stylesheet">
     <link href="css/timeline.css" media="screen" rel="stylesheet">
     <link href="css/splash.css" media="screen" rel="stylesheet">
+    <link href="css/board.css" media="screen" rel="stylesheet">
+    <link href="css/header.css" media="screen" rel="stylesheet">
+    <link href="css/footer.css" media="screen" rel="stylesheet">
+    <link href="css/about.css" media="screen" rel="stylesheet">
+    <link href="css/projects.css" media="screen" rel="stylesheet">
+    <link href="css/sailbot.css" media="screen" rel="stylesheet">
+    <link href="css/tiltrotor.css" media="screen" rel="stylesheet">
+    <!-- import fonts -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <script src="js/jquery-2.1.3.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <!-- insert js file scripts and imported libraries -->
+    <script src="js/jquery-2.1.3.min.js"></script> <!-- jQuery import -->
     <script src="js/modernizr.js"></script> <!-- Modernizr -->
-    <script src="js/home.js"></script>
-
-    </head>
+    <script src="js/home.js"></script> <!-- my js script -->
   </head>
-  <body>
-    <section id="head">
-      <div class="photo-container">
-        <img src="img/inve-white.png" class="photo" />
-      </div>
-      <div class="arrow animated bounce" id="arrow-down"></div>
-    </section>
 
-    <section id="about">
-      <div id="about-title">
-        <h1>Who We Are</h1>
-      </div>
-      <div id="about-content">
-        <h2>Yale Undergraduate Intelligent Vehicles (InVē) is a robotics group at Yale formed in the fall of 2013. Each year, we integrate design, technology, and engineering into an autonomous vehicle that we enter into national or international robotics competitions.  These collegiate competitions help us to develop technical and design skills while engaging with engineering outside of the framework of our formal education.  In doing so, we tackle many real-world engineering problems and challenges as we create self-driving vehicles.</h2>
-      </div>
-    </section>
-    <section id="sailbot">
-      <div id="sailbot-title">
-        <h1>This Year's Competition</h1>
-      </div>
-      <div id="sailbot-content">
-        <h2>Yale InVē will be competing at the 2016 <a href="http://sailbot.org" target="_blank">International Robotic Sailing Regatta</a>, informally known as Sailbot. SailBot aims at allowing student teams from across the globe to construct and compete in friendly, autonomous sailboat racing. The competition started in 2004, when students from the University of British Columbia demonstrated as part of a fourth-year design project that an autonomous sailboat was possible. As a result, formal rules were constructed for friendly autonomous sailboat racing, with the first SailBot competition held in 2006 at Queen’s University in Ontario.</h2>
-        <h2>The Yale team will be constructing a vessel for the 2-meter sailing class, and will participate in five events: a fleet race, a station keeping challenge, a navigation challenge, a long distance race, and an autonomous computer vision challenge.</h2>
-      </div>
-    </section>
-    <section id="timeline">
-      <div id="about-timeline">
-        <h1>Sailbot Timeline</h1>
-      </div>
-      <div id="cd-timeline" class="cd-container">
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-picture">
-            <img src="img/cd-icon-clipboard.svg" alt="Event">
-          </div> <!-- cd-timeline-img -->
+  <body id="root">
+      <div id='container'>
+          <div class="photo-container" id="navbar">
+            <img src="img/inve-white.png" class="photo" alt="Yale InVē"/>
+          </div>
 
-          <div class="cd-timeline-content">
-            <h2>Sailbot Kickoff</h2>
-            <p>Assemble the team to begin work on the Sailbot project. Begin algorithm and sailboat design research, studies, and small experiments.</p>
-            <span class="cd-date">September 2014</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+          <!--          WELCOME PAGE      -->
+        <section id="head">
+          <!-- empty space that changes height -->
+        </section>
+        <!--        ABOUT       -->
+        <section id="about">
+          <div id="about-title">
+            <h1>Who We Are</h1>
+          </div>
+          <div id="about-content">
+            <h2>Yale Undergraduate Intelligent Vehicles (InVē) is a robotics group at Yale formed in the fall of 2013. Each year, we integrate design, technology, and engineering into an autonomous vehicle that we enter into national or international robotics competitions.  These collegiate competitions help us to develop technical and design skills while engaging with engineering outside of the framework of our formal education.  In doing so, we tackle many real-world engineering problems and challenges as we create self-driving vehicles.</h2>
+          </div>
+          <div id="about-subtext" class="show-arrow">
+            more about us
+            <div class="arrow animated bounce arrow-down"  id="arrow-down2">  </div>
+          </div>
+        </section>
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-picture">
-            <img src="img/cd-icon-clipboard.svg" alt="Event">
-          </div> <!-- cd-timeline-img -->
+        <!--        PROJECTS        -->
+        <section id="projects">
+          <div id="projects-title">
+            <h1>Current Projects</h1>
+          </div>
 
-          <div class="cd-timeline-content">
-            <h2>Construction of Model Sailbot</h2>
-            <p>We will construct an RC sailboat to experiment with different hardware design decisions. This will allow us to start collecting data from different types of sensors to figure out the control structure of our final design. Begin experimentation with different algorithms for using sensor data for continuous controlling of the sailboat.</p>
-            <span class="cd-date">December 2014</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+          <div id="projects-content">
+            <div id="sailbot-choice" class="projectsdiv bg-wrapper">
+              <h3 id="arrow-sailbot" class="choice-text">  SAILBOT </h3>
+            </div>
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-picture">
-            <img src="img/cd-icon-clipboard.svg" alt="Event">
-          </div> <!-- cd-timeline-img -->
+            <div id="tiltrotor-choice" class="projectsdiv">
+              <h3 id="arrow-tiltrotor" class="choice-text">  TILTROTOR  </h3>
+            </div>
+          </div>
 
-          <div class="cd-timeline-content">
-            <h2>Construct Prototype of Sailbot Design</h2>
-            <p>Using data and research collected from the model sailboat, we will design, architect, and construct an alpha version of the final sailboat design. Sensors will be attached to the prototype to test developed control algorithms.</p>
-            <span class="cd-date">May 2015</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+        </section>
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-location">
-            <img src="img/cd-icon-location.svg" alt="Location">
-          </div> <!-- cd-timeline-img -->
+        <!--        SAILBOT       -->
+        <section id="sailbot" class="sailbot">
+          <div id="sailbot-title">
+            <h1>Sailbot -- This Year's Competition</h1>
+          </div>
+          <div id="sailbot-content">
+            <h2>Yale InVē will be competing at the 2018 <a href="http://sailbot.org" target="_blank">International Robotic Sailing Regatta</a>, informally known as Sailbot. SailBot aims at allowing student teams from across the globe to construct and compete in friendly, autonomous sailboat racing. The competition started in 2004, when students from the University of British Columbia demonstrated as part of a fourth-year design project that an autonomous sailboat was possible. As a result, formal rules were constructed for friendly autonomous sailboat racing, with the first SailBot competition held in 2006 at Queen’s University in Ontario.</h2>
+            <h2>The Yale team will be constructing a vessel for the 2-meter sailing class, and will participate in five events: a fleet race, a station keeping challenge, a navigation challenge, a long distance race, and an autonomous computer vision challenge.</h2>
+          </div>
+          <h2 class="arrow_up sailbot collapse-sailbot" >
+            x  close
+          </h2>
+        </section>
 
-          <div class="cd-timeline-content">
-            <h2>International Robotic Sailing Regatta (IRSR) 2015</h2>
-            <p>Attend the 2015 IRSR to test our Sailboat design concept and control algorithms.</p>
-            <span class="cd-date">June 1-6, 2015</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+        <!--        SAILBOT TIMELINE        -->
+        <section id="timeline-sb" class="sailbot">
+          <div id="about-timeline">
+            <h1>Sailbot Timeline</h1>
+          </div>
+          <div id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img sailbot cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Sailbot Kickoff</h2>
+                <p>Assemble the team to begin work on the Sailbot project. Begin algorithm and sailboat design research, studies, and small experiments.</p>
+                <span class="cd-date">September 2014</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-picture">
-            <img src="img/cd-icon-clipboard.svg" alt="Event">
-          </div> <!-- cd-timeline-img -->
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img sailbot cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Construction of Model Sailbot</h2>
+                <p>We will construct an RC sailboat to experiment with different hardware design decisions. This will allow us to start collecting data from different types of sensors to figure out the control structure of our final design. Begin experimentation with different algorithms for using sensor data for continuous controlling of the sailboat.</p>
+                <span class="cd-date">December 2014</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-content">
-            <h2>Finish Final Sailbot</h2>
-            <p>Finish fabrication of chosen sailboat concept, repeat testing on prior design if necessary for mechanical validation.</p>
-            <span class="cd-date">Fall 2015</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img sailbot cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Construct Prototype of Sailbot Design</h2>
+                <p>Using data and research collected from the model sailboat, we will design, architect, and construct an alpha version of the final sailboat design. Sensors will be attached to the prototype to test developed control algorithms.</p>
+                <span class="cd-date">May 2015</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-picture">
-            <img src="img/cd-icon-clipboard.svg" alt="Event">
-          </div> <!-- cd-timeline-img -->
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img sailbot cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Finish Final Sailbot</h2>
+                <p>Finish fabrication of chosen sailboat concept, repeat testing on prior design if necessary for mechanical validation.</p>
+                <span class="cd-date">Fall 2017</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
 
-          <div class="cd-timeline-content">
-            <h2>Finish Software</h2>
-            <p>Perfect control algorithms on latest boat hull, and test hardware/software on the competition sailboat on the Long Island Sound.</p>
-            <span class="cd-date">Spring 2016</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img sailbot cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>Finish Software</h2>
+                <p>Perfect control algorithms on latest boat hull, and test hardware/software on the competition sailboat on the Long Island Sound.</p>
+                <span class="cd-date">Spring 2018</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
 
-        <div class="cd-timeline-block">
-          <div class="cd-timeline-img cd-location">
-            <img src="img/cd-icon-location.svg" alt="Location">
-          </div> <!-- cd-timeline-img -->
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img sailbot cd-location">
+                <img src="img/cd-icon-location.svg" alt="Location">
+              </div>
+              <div class="cd-timeline-content">
+                <h2>International Robotic Sailing Regatta (IRSR) 2018</h2>
+                <p>Compete in all events of the 2018 International Robotic Sailboat Regatta.</p>
+                <span class="cd-date">Spring 2018</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
+          </div> <!-- cd-timeline -->
 
-          <div class="cd-timeline-content">
-            <h2>International Robotic Sailing Regatta (IRSR) 2016</h2>
-            <p>Compete in all events of the 2016 International Robotic Sailboat Regatta.</p>
-            <span class="cd-date">Spring 2016</span>
-          </div> <!-- cd-timeline-content -->
-        </div> <!-- cd-timeline-block -->
+          <h2 class="arrow_up sailbot collapse-sailbot" >
+            x  close
+          </h2>
+        </section>
 
-      </div> <!-- cd-timeline -->
-    </section>
-    <section id="team">
-      <div id="team-title">
-        <h1>The Team</h1>
-      </div>
-      <div id="team-members">
-        <div id="team-leadership">
-          <article>
-            <img src="img/carrillo.png" alt="" />
-                <p class="person-name">Alex Carrillo</p>
+        <!--        SAILBOT TEAM        -->
+        <section id="team-sb" class="team sailbot">
+          <div class="team-title">
+            <h1>The Sailbot Team</h1>
+          </div>
+          <div class="team-members" >
+            <div class="team-leads" id="sailbot-leads"> </div>
+            <div class="team-rest" id="sailbot-team"> </div>
+            <div class="clearer"></div>
+          </div>
+
+          <h2 class="arrow_up sailbot collapse-sailbot" >
+            x  close
+          </h2>
+        </section>
+
+        <!--        TILTROTOR       -->
+        <section id="tiltrotor" class="tiltrotor">
+          <div id="tiltrotor-title">
+            <h1>Tiltrotor -- This Year's Goal</h1>
+          </div>
+          <div id="tiltrotor-content">
+            <h2>A tiltrotor is a fixed wing aircraft capable of vertical take off and landing like a helicopter by tilting its rotors vertically. Tiltrotors have improved speed and range compared to helicopters but retain the ability to operate in areas without access to runways or landing strips. </h2>
+            <h2>The goals of this project are to:
+              <li> Collaborate with YUAA to build a fully functional unmanned tiltrotor </li>
+              <li> Demonstrate the advantages of tiltrotors over helicopters </li>
+              <li> Learn theoretical and practical engineering skills </li>
+              <li> Add semiautonomous capabilities to flight controller </li>
+            </h2>
+          </div>
+          <h2 class="arrow_up tiltrotor collapse-tiltrotor" >
+            x  close
+          </h2>
+        </section>
+
+        <section id="timeline-tr" class="tiltrotor">
+          <div id="about-timeline">
+            <h1>Tiltrotor Timeline</h1>
+          </div>
+          <div id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img tiltrotor cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content tiltrotor">
+                <h2>Tiltrotor Kickoff</h2>
+                <p></p>
+                <span class="cd-date">September 2017</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img tiltrotor cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content tiltrotor">
+                <h2>Finish Initial Design</h2>
+                <p></p>
+                <span class="cd-date">October 2017</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img tiltrotor cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content tiltrotor">
+                <h2>Initial Test Flight</h2>
+                <p></p>
+                <span class="cd-date">October 2017</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img tiltrotor cd-picture">
+                <img src="img/cd-icon-clipboard.svg" alt="Event">
+              </div>
+              <div class="cd-timeline-content tiltrotor">
+                <h2>Full RC Flight Capabilities</h2>
+                <p></p>
+                <span class="cd-date">April 2018</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
+
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-img tiltrotor cd-location">
+                <img src="img/cd-icon-clipboard.svg" alt="Location">
+              </div>
+              <div class="cd-timeline-content tiltrotor">
+                <h2>Achieve Semiautonomy</h2>
+                <p></p>
+                <span class="cd-date">Fall 2018</span>
+              </div>
+            </div> <!-- cd-timeline-block -->
+
+          </div> <!-- cd-timeline -->
+
+          <h2 class="arrow_up tiltrotor collapse-tiltrotor" >
+            x  close
+          </h2>
+
+        </section>
+
+        <!--        TILTROTOR TEAM        -->
+        <section id="team-tr" class="team tiltrotor">
+          <div class="team-title">
+            <h1>The Tiltrotor Team</h1>
+          </div>
+          <div class="team-members">
+            <div class="team-leads" id="tiltrotor-leads"> </div>
+            <div class="team-rest" id="tiltrotor-team"> </div>
+            <div class="clearer"></div>
+          </div>
+
+          <h2 class="arrow_up tiltrotor collapse-tiltrotor" >
+            x  close
+          </h2>
+        </section>
+
+        <!--        BOARD       -->
+        <section id="board" class="team">
+          <div class="team-title">
+            <h1 id="board-title">The Board & Advisors</h1>
+          </div>
+
+          <div class="team-members">
+            <div id="board-leadership">
+              <article>
+                <img src="img/j_li.png" alt="" />
+                <p class="person-name">Jonathan Li</p>
                 <p class="person-title">President</p>
-                <p class="person-title">Software</p>
-          </article>
-          <article>
-            <img src="img/brooks.png" alt="" />
-                <p class="person-name">Jason Brooks</p>
+              </article>
+              <article>
+                <img src="img/z_wright.png" alt="" />
+                <p class="person-name">Zach Wright</p>
                 <p class="person-title">Treasurer</p>
-                <p class="person-title">Software</p>
-          </article>
-          <div class="clearer"></div>
-        </div>
-        <br>
-        <div id="team-leads">
-          <article>
-            <img src="img/mccann.png" alt="" />
-                <p class="person-name">Connor McCann</p>
-                <p class="person-title">Design Lead</p>
-          </article>
-          <article>
-            <img src="img/cerbu.png" alt="" />
-                <p class="person-name">Alois Cerbu</p>
-                <p class="person-title">Fabrication Lead</p>
-          </article>
-          <article>
-            <img src="img/liao.png" alt="" />
-                <p class="person-name">Thomas Liao</p>
-                <p class="person-title">Business Lead/Electronics</p>
-          </article>
-          <div class="clearer"></div>
-        </div>
-        <br>
-        <div id="team-rest">
-          <article>
-            <img src="img/anderson.png" alt="" />
-            <p class="person-name">Eric Anderson</p>
-            <p class="person-title">Fabrication/Software</p>
-          </article>
-          <article>
-            <img src="img/kelleher.png" alt="" />
-            <p class="person-name">Jack Kelleher</p>
-            <p class="person-title">Design/Fabrication</p>
-          </article>
-          <article>
-            <img src="img/robinson.png" alt="" />
-            <p class="person-name">Matthew Robinson</p>
-            <p class="person-title">Electronics</p>
-          </article>
-          <article>
-            <img src="img/malta.png" alt="" />
-              <p class="person-name">Andrew Malta</p>
-              <p class="person-title">Software</p>
-          </article>
-          <article>
-            <img src="img/shreyas.png" alt="" />
-            <p class="person-name">Shreyas Tirumala</p>
-            <p class="person-title">Software</p>
-          </article>
-          <article>
-            <img src="img/person.png" alt="" />
-            <p class="person-name">Jessica Alzamora</p>
-            <p class="person-title">Fabrication</p>
-          </article>
-          <article>
-            <img src="img/li.png" alt="" />
-            <p class="person-name">Betsy Li</p>
-            <p class="person-title">Fabrication</p>
-          </article>
-          <article>
-            <img src="img/person.png" alt="" />
-            <p class="person-name">Soham Sankaran</p>
-            <p class="person-title">Software</p>
-          </article>
-          <div class="clearer"></div>
-        </div>
-        <br>
-        <div id="team-advisors">
-          <article>
-            <img src="img/wilen.png" alt="" />
-            <p class="person-name">Larry Wilen, Ph.D</p>
-            <p class="person-title">Team Advisor</p>
-          </article>
-          <article>
-            <img src="img/revkin.png" alt="" />
-            <p class="person-name">Joshua Revkin</p>
-            <p class="person-title">Design Advisor</p>
-          </article>
-        </div>
-        <div class="clearer"></div>
+              </article>
+              <div class="clearer"></div>
+            </div>
+
+            <div id="board-advisors">
+              <article>
+                <img src="img/wilen.png" alt="" />
+                <p class="person-name">Larry Wilen, Ph.D</p>
+                <p class="person-title">Team Advisor</p>
+              </article>
+              <article>
+                <img src="img/person.png" alt="" />
+                <p class="person-name">Acshi Haggenmuller</p>
+                <p class="person-title">Alumni Advisor</p>
+              </article>
+              <article>
+                <img src="img/j_kelleher.png" alt="" />
+                <p class="person-name">Jack Kelleher</p>
+                <p class="person-title">Alumni Advisor</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
       </div>
-    </section>
-    <section id="footer">
-      <div class="social">
-        <a href="https://www.facebook.com/yaleinve" class="icon-facebook first-social"></a>
-        <a href="mailto:jason.brooks@yale.edu,alejandro.carrillo@yale.edu" class="icon-mail"></a>
-        <a href="https://twitter.com/yaleinve" class="icon-twitter"></a>
-      </div>
-    </section>
-  </body>
+      <section id="footer">
+        <div class="social">
+          <a href="https://www.facebook.com/yaleinve" class="icon-facebook first-social"></a>
+          <a href="mailto:jason.brooks@yale.edu,alejandro.carrillo@yale.edu" class="icon-mail"></a>
+          <a href="https://twitter.com/yaleinve" class="icon-twitter"></a>
+        </div>
+      </section>
+
 </html>

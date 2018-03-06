@@ -1,0 +1,102 @@
+/*********************
+
+Sailbot Section
+
+*********************/
+
+section#sailbot {
+    /* background-color: #c8d7dc; */
+    /* background-color: #984b43; */
+    /* background-color:  #0a182d; */
+    /* background-color: #283447; // navy */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/aluminum.jpg') no-repeat center center;
+    background-size: cover;
+
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 45px;
+    padding-top: 30px;
+    min-width: 750px;
+
+    /* position: absolute;
+    width: 100vw;
+    left: -100vw; */
+
+}
+
+#sailbot-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#sailbot-title h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+#sailbot-content {
+    font-weight: 200;
+    font-size: 18px;
+    /*font-size: 2vw;*/
+    line-height: 150%;
+    width: 75%;
+    margin: 0 auto;
+}
+
+#sailbot-content h2 {
+    padding-bottom: 20px;
+}
+
+/*********************
+
+Sailbot Timeline Section
+
+*********************/
+
+section#timeline-sb {
+    /* background-color: #e9f0f5; */
+    /* background-color: #eac67a; */
+    background-color: rgba(0,0,0,0);
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 45px;
+    min-width: 750px;
+
+}
+
+#about-timeline {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#about-timeline h1 {
+    font-size: 60px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cd-timeline-content {
+  color: black;
+}
+.cd-date {
+  color: rgb(255, 255, 255);
+}
+
+/*********************
+
+Sailbot Team
+
+*********************/
+section#team-sb {
+  /* background-color: #4d5f7c; */
+  /* background-color: #283447; */
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/blueprint.png') no-repeat center center;
+
+	font-family: 'Open Sans', sans-serif;
+  padding-bottom: 45px;
+  min-width: 750px;
+
+}

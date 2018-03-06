@@ -1,0 +1,33 @@
+
+/*********************
+
+Board Section
+
+*********************/
+
+section#board {
+	/* background-color: #d7dce1; */
+  /* background-color: #984b43; */
+  background-color: rgba(0,0,0,0);
+	font-family: 'Open Sans', sans-serif;
+  min-width: 750px;
+
+}
+
+#board-title {
+  color: white;
+}
+
+#board-leadership article{
+  padding: 0;
+}
+
+#board-leadership img {
+  width: 250px;
+  height: 250px;
+}
+
+#board-advisors article img {
+	width: 200px;
+	height: 200px;
+}

@@ -1,7 +1,6 @@
-## Overview
+# new-inve-website
+Codebase for the new website of the Yale Undergraduate Intelligent Vehicles club
 
-Splash page for Yale Undergraduate Intelligent Vehicles
+<img align="center" width="300" height="250" src="https://github.com/ajoann/new-inve-website/blob/master/img/site_preview.png" alt="">
 
-## How to Run
-
-On a local machine, run a simple python server by using the command `python -m SimpleHTTPServer` in the root of the repository
+This will be eventually assigned to yaleinve.org, but for now, view by downloading the folder and opening index.html in a web browser!
