@@ -57,7 +57,7 @@ Header
   }
 
   50% {
-		background-color: rgba(244, 217, 66, 0.3);
+		/* background-color: rgba(244, 217, 66, 0.3); */
 		border-radius: 30px;
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -74,7 +74,7 @@ Header
   }
 
   50% {
-		background-color: rgba(244, 217, 66, 0.3);
+		/* background-color: rgba(244, 217, 66, 0.3); */
 		border-radius: 30px;
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -91,7 +91,7 @@ Header
   }
 
   50% {
-		background-color: rgba(244, 217, 66, 0.3);
+		/* background-color: rgba(244, 217, 66, 0.3); */
 		border-radius: 30px;
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);
@@ -108,7 +108,7 @@ Header
   }
 
   50% {
-		background-color: rgba(244, 217, 66, 0.3);
+		/* background-color: rgba(244, 217, 66, 0.3); */
 		border-radius: 30px;
     -webkit-transform: translateY(-10px);
     -moz-transform: translateY(-10px);

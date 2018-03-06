@@ -391,7 +391,7 @@ function getTeam() {
 	    "last": "Meghir",
 	    "team": "Tilt Rotor, Sailbot",
 	    "role": "Software, Fabrication",
-	    "photo": "",
+	    "photo": "photo",
 	    "tiltrotorlead": "",
 	    "sailbot-lead": ""
 	  },
